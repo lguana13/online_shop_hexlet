@@ -6,7 +6,7 @@
   prerequisites: |
     Открыта главная страница с товарами
   test-data: |
-    no data
+    no-data
   steps:
     - Выбрать любой брэнд, например, Apple
   expected-result: |
@@ -19,7 +19,7 @@
   prerequisites: |
     Открыта главная страница с товарами
   test-data: |
-    no data  
+    no-data  
   steps:
     - Добавить любой товар в корзину, например,  Iphone X
   expected-result: |
@@ -45,7 +45,7 @@
   prerequisites: |
     Открыта главная страница с товарами
   test-data: |
-    no data  
+    no-data  
   steps:
     - Добавить любой товар в корзину, например, Brown Perfume
     - Перейти в корзину
@@ -73,7 +73,7 @@
   prerequisites: |
     Открыта главная страница с товарами
   test-data: |
-    no data  
+    no-data  
   steps:
     - Кликнуть на карточку любого товара, например, OPPOF19
   expected-result: |
@@ -83,8 +83,10 @@
     Проверка русской локализации в каталоге
   requirement: |
     При выставлении русского языка на сайте, пользователь должен видеть описание товаров на русском
+  prerequisites: |
+    no-prerequisites
   test-data: |
-    no data  
+    no-data  
   steps:
     - Во вкладке "Язык" / "Language" выбрать "Russian"
   expected-result: |
@@ -94,10 +96,12 @@
     Проверка полной очистки корзины
   requirement: |
     При нажатии на кнопку "Очистить корзину" все товары из корзины исчезают
+  prerequisites: |
+    Открыта главная страница с товарами
   test-data: |
-    no data  
+    no-data  
   steps:
-    - Заказать несколько товаров на основной странице
+    - Заказать несколько товаров
     - Перейти в корзину
     - Нажать на кнопку "Очистить корзину"
   expected-result: |
@@ -107,6 +111,8 @@
     Проверка перемещения на главную страницу при нажатии на название магазина
   requirement: |
     При нажатии на надпись "Hexlet Store" пользователь должен попасть на главную страницу
+  prerequisites: |
+    no-prerequisites
   test-data: |
     no data  
   steps:
